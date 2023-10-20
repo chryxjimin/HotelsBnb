@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import okhttp3.OkHttpClient
 import okhttp3.Request
-
+import com.example.hotelsbnb.BuildConfig.API_KEY
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         val request = Request.Builder()
             .url("https://airbnb13.p.rapidapi.com/autocomplete?query=paris")
             .get()
-            .addHeader("X-RapidAPI-Key", "7718cee0aamsh63e0c8fd0d2e903p15ee9ajsn45c10db9278a")
+            .addHeader("X-RapidAPI-Key", "$API_KEY")
             .addHeader("X-RapidAPI-Host", "airbnb13.p.rapidapi.com")
             .build()
 
