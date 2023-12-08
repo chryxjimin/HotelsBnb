@@ -9,8 +9,8 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import com.example.hotelsbnb.BuildConfig.API_KEY
 
-class MainActivity : AppCompatActivity() {
 
+class MainActivity : AppCompatActivity() {
     var maintext: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
